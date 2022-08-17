@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Code allows for colour referencing */
+:root{
+    --colour-one: rgb(216, 232, 174);
+    --colour-two: rgb(202, 85, 85);
+    --colour-three: rgb(68, 194, 123);
+    --colour-four: rgb(148, 121, 234);
+    --border-one: dashed 2px white;
+}
+
+/* Code uses colour root for website colour background */
+body {
+    background-color: var(--colour-two);
+}
+
+/* main grid page */
+
+#styledimg {
+    
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 20px;
+    }
+
+#grid-container-bg{
+    background-color: var(--colour-four);
+    width: 71vw;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+/* Code dividing up the webpage by rows and coloums (25%, 20%) fr = fraction */
+    grid-template-columns: 1fr 1fr 1fr 0.4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 0.4fr;
+    gap: 10px 10px;
+}
+
+.grid-item-one{
+    border: var(--border-one);
+}
+
+#box-one{
+    grid-row: 3/4;
+    grid-column: 4/9;
+    background-color: var(--colour-one);
+    gap: 10px 10px; 
+}
+
+ #box-two{
+    grid-row: 2/4;
+    grid-column: 2/4;
+   background-color: var(--colour-two);
+    gap: 10px 10px;
+ }
+
+ #box-three{
+    grid-row: 2/3;
+    grid-column: 4/9;
+    background-color: var(--colour-three);
+    gap: 10px 10px; 
+}
+
+#box-four{
+    grid-row: 4/6;
+    grid-column: 2/4;
+    background-color: var(--colour-one);
+    gap: 10px 10px; 
+}
+
+#box-five{
+    grid-row: 4/6;
+    grid-column: 4/7;
+    background-color: var(--colour-two);
+    gap: 10px 10px; 
+}
+
+#box-six{
+    grid-row: 4/6;
+    grid-column: 7/9;
+    background-color: var(--colour-three);
+    gap: 10px 10px; 
+}
+
+#box-seven{
+    grid-row: 6/8;
+    grid-column: 2/9;
+    background-color: var(--colour-one);
+    gap: 10px 10px; 
+}
+
+
